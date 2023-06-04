@@ -1213,14 +1213,14 @@ kbase_submit(kbase k, uint64_t va, unsigned req,
                 .addr = (uintptr_t) &atom,
         };
 
-        int ret = kbase_ioctl(k->fd, KBASE_IOCTL_JOB_SUBMIT, &submit);
+        // int ret = kbase_ioctl(k->fd, KBASE_IOCTL_JOB_SUBMIT, &submit);
 
-        util_dynarray_fini(&extres);
+        // util_dynarray_fini(&extres);
 
-        if (ret == -1) {
-                perror("ioctl(KBASE_IOCTL_JOB_SUBMIT)");
-                return -1;
-        }
+        // if (ret == -1) {
+        //         perror("ioctl(KBASE_IOCTL_JOB_SUBMIT)");
+        //         return -1;
+        // }
 
         return atom.atom_number;
 }

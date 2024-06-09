@@ -46,8 +46,6 @@ jobs:
           meson setup "build-android" \
             --prefix=/tmp/pan \
             --cross-file "build-crossfile" \
-            --enable-texture-float \
-            --with-osmesa-bits=32 \    
             -Dplatforms=android \
             -Dplatform-sdk-version=26 \
             -Dandroid-stub=true \

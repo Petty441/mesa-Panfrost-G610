@@ -122,23 +122,6 @@ foreach d : [[with_gallium_kmsro, [
 endforeach
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 meson.add_install_script(
   install_megadrivers_py.path(),
   libgallium_dri.full_path(),

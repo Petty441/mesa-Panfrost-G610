@@ -358,7 +358,7 @@ panfrost_get_param(struct pipe_screen *screen, enum pipe_cap param)
         }
 
         case PIPE_CAP_IMAGE_STORE_FORMATTED:
-                return 1;
+                return 0;
 
         case PIPE_CAP_NATIVE_FENCE_FD:
                 return 0;

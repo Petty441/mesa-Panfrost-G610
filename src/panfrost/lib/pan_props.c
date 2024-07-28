@@ -74,7 +74,7 @@ const struct panfrost_model panfrost_model_list[] = {
         MODEL(0x7402, "G52 r1", "TGOx", HAS_ANISO, 16384, {}),
         MODEL(0x9093, "G57", "TNAx", HAS_ANISO, 16384, {}),
         MODEL(0xa867, "G610", "LODx", HAS_ANISO, 65536, {}),
-        MODEL(0xa862, "G710", "TODx", HAS_ANISO, 65536, { .no_hierarchical_tiling = false, .supports_afbc = true, .max_tile_size = 8192}),
+        MODEL(0xa862, "G710", "TODx", HAS_ANISO, 65536, {}),
 };
 
 const struct panfrost_model panfrost_unknown_model = {
@@ -83,7 +83,7 @@ const struct panfrost_model panfrost_unknown_model = {
    .performance_counters = "AAAA",
    .min_rev_anisotropic = NO_ANISO, 
    .tilebuffer_size = 8192, 
-   .quirks = { .no_hierarchical_tiling = false, .supports_afbc = true, .max_tile_size = 8192}, 
+   .quirks = {}, 
 };
 
 #undef NO_ANISO

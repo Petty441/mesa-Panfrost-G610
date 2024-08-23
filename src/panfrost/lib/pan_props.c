@@ -86,6 +86,15 @@ const struct panfrost_model panfrost_unknown_model = {
    .quirks = {}, 
 };
 
+const struct panfrost_model panfrost_unknown_model = {
+   .gpu_id = 0,
+   .name = "Unknowm Mali device (Panfrost)",
+   .performance_counters = "AAAA",
+   .min_rev_anisotropic = NO_ANISO, 
+   .tilebuffer_size = 8192, 
+   .quirks = {}, 
+};
+
 #undef NO_ANISO
 #undef HAS_ANISO
 #undef MODEL

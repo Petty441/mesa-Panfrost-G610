@@ -54,10 +54,12 @@ jobs:
             -Degl=disabled \
             -Dgbm=disabled \
             -Dglx=disabled \
+            -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=panfrost \
-            -Dshared-glapi=false
+            -Dgallium-drivers=swrast,panfrost \
+            -Dshared-glapi=false \
+            -Dbuildtype=debug
           ninja -C "build-android" install
       - name: Upload libraries
         uses: actions/upload-artifact@v2
